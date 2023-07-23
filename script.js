@@ -65,7 +65,8 @@ $(document).ready(function(){
     });
 });
 user = prompt("kindly enter your name");
-document.getElementById('user').innerHTML=`<H1>HELLO ${user} WELCOME TO THIS WEBSITE</H1>`;
+if(user==null)`<H1>HELLO  WELCOME TO THIS WEBSITE</H1>`;
+document.getElementById('user').innerHTML=`<H3>HELLO ${user} WELCOME TO THIS WEBSITE</H3>`;
   
 let uname = document.getElementById("usub");
 let uemail = document.getElementById("uemail");
