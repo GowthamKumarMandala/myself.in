@@ -21,13 +21,13 @@ $(document).ready(function(){
 
         // TYPING 
     var typed = new Typed(".typing",{
-        strings :["Student","Developer","Editor","Dancer"],
+        strings :["Student","Developer","Designer","Team player"],
         backSpeed:60,
         typeSpeed:100,
         loop:true
     });
     var typed = new Typed(".typing2",{
-        strings :["Student","Developer","Editor","Dancer"],
+        strings :["Student","Developer","Designer","Team player"],
         backSpeed:60,
         typeSpeed:100,
         loop:true
@@ -78,4 +78,3 @@ function sendEmail(){
     
     alert("your details submitted thanks for visiting, please give feedback by clicking 'sendfeedback'")
 }
-
