@@ -277,7 +277,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "What i provide";
+    content: "What I manage";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -392,7 +392,7 @@ section .title::after{
 }
 .teams .carousel .card{
     background: #222;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     padding:25px  35px;
     text-align: center;
     transition: all .3s ease;
@@ -417,9 +417,9 @@ section .title::after{
 
 .teams .carousel .card img{
     height: 150px;
-    width: 150px;
+    width: 200px;
     object-fit: cover;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 5px solid rgb(0, 136, 255);
 }
 .teams .carousel .card:hover img{
@@ -581,7 +581,7 @@ footer span a:hover{
     }
     
     .menu-btn i.active::before{
-        content: "\f00d";
+        content: "close";
     }
     .navbar .menu{
         position: fixed;
