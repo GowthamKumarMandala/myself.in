@@ -767,6 +767,13 @@ footer span a:hover{
         width: 100%;
         margin-bottom:35px;
     }
+    .projectcard {
+    position: relative;
+    width: 275px;
+    height: 200px;
+    margin-right: -10px;
+    box-shadow: 0 5px 10px grey;
+  }
     .imagebox {
     transition: 0.3s;
     /* transform: translateY(-100px); */
@@ -863,6 +870,13 @@ footer span a:hover{
         justify-content: center;
         align-content: center;
     }
+    .projectcard {
+    position: relative;
+    width: 265px;
+    height: 200px;
+    margin-right: -10px;
+    box-shadow: 0 5px 10px grey;
+  }
     .content {
     transition: 0.3s;
     animation: content infinite;
@@ -948,6 +962,13 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
+    .projectcard {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    margin-right: -10px;
+    box-shadow: 0 5px 10px grey;
+  }
     .content {
     transition: 0.3s;
     animation: content infinite;
