@@ -87,15 +87,18 @@ html{
     animation-duration: 3s;
 }
 @keyframes mainlogo {
-    0%{
-        transform: scale(0.95);
-    }
-    50%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0.95);
-    }
+  0% {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 16px 4px black;
+  }
+  50% {
+    transform: scale(1);
+    box-shadow: 1px 1px 16px 4px rgb(31, 140, 195);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 16px 4px black;
+  }
 }
 .mainlogo img:hover{
     transform: scale(1.05);
@@ -484,7 +487,93 @@ section .title::after{
 .owl-dot:hover{
     background: rgb(0, 136, 255) !important;
 }
+/* PROJECTS SECTION */
+.projects .title::after {
+  content: "I Have Done";
+}
+.projects .carousel .projectcard {
+  background: #fff;
+  /* border-radius: 6px; */
+  padding: 15px 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 99px 5px;
+  margin-bottom: 50px;
+}
+.projectcard button {
+  opacity: 1;
+  height: 40px;
+  width: 170px;
+  background: rgb(0, 136, 255) !important;
+  position: absolute;
+  margin-top: -154px;
+  margin-left: -71px;
+  z-index: 100;
+  display: inline-block;
+  background: rgb(0, 136, 255);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 30px;
+  border-radius: 6px;
+  border: 2px solid rgb(0, 136, 255);
+  transition: all 0.3s ease;
+}
+.projects .carousel .projectcard .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectcard {
+  position: relative;
+  width: 340px;
+  height: 240px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px grey;
+  transition: 0.3s;
+  background: #fff;
+  cursor: pointer;
 
+  /* padding: 30px 50px; */
+}
+
+.imagebox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  /* transform: translateY(-100px); */
+  animation: card infinite;
+  animation-duration: 8s;
+}
+
+#projectimg {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px grey;
+  transition: 0.3s;
+}
+.content {
+  padding: 10px 20px;
+  text-align: center;
+  transform: translateY(-170px);
+  opacity: 0;
+  transition: 0.3s;
+  animation: content infinite;
+  animation-duration: 8s;
+}
+
+.projectcard:hover {
+  height: 250px;
+}
+.projectcard:hover > .content {
+  opacity: 1;
+  transform: translateY(-150px);
+}
+.projectcard:hover > .imagebox {
+  transform: translateY(-100px);
+}
         /* CONTACT SECTION */
 .contact .title::after{
     content:"get in touch";
@@ -678,6 +767,74 @@ footer span a:hover{
         width: 100%;
         margin-bottom:35px;
     }
+    .imagebox {
+    transition: 0.3s;
+    /* transform: translateY(-100px); */
+    animation: card infinite;
+    animation-duration: 8s;
+    z-index: 11;
+  }
+  @keyframes card {
+    0% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(-100px);
+    }
+    40% {
+      transform: translateY(-100px);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+    60% {
+      transform: translateY(-100px);
+    }
+    70% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes content {
+    0% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+    2% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    40% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    90% {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+  }
 }
 
 @media (max-width:690px){
@@ -706,6 +863,79 @@ footer span a:hover{
         justify-content: center;
         align-content: center;
     }
+    .content {
+    transition: 0.3s;
+    animation: content infinite;
+    animation-duration: 8s;
+  }
+  .imagebox {
+    transition: 0.3s;
+    /* transform: translateY(-100px); */
+    animation: card infinite;
+    animation-duration: 8s;
+    z-index: 11;
+  }
+  @keyframes card {
+    0% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(-115px);
+    }
+    40% {
+      transform: translateY(-115px);
+    }
+    50% {
+      transform: translateY(-115px);
+    }
+    60% {
+      transform: translateY(-115px);
+    }
+    70% {
+      transform: translateY(-115px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes content {
+    0% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+    2% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    40% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    90% {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+  }
 }
 @media (max-width:500px){
     .mainlogo img{
@@ -718,4 +948,77 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
+    .content {
+    transition: 0.3s;
+    animation: content infinite;
+    animation-duration: 8s;
+  }
+  .imagebox {
+    transition: 0.3s;
+    /* transform: translateY(-100px); */
+    animation: card infinite;
+    animation-duration: 8s;
+    z-index: 11;
+  }
+  @keyframes card {
+    0% {
+      transform: translateY(0px);
+    }
+    30% {
+      transform: translateY(-115px);
+    }
+    40% {
+      transform: translateY(-115px);
+    }
+    50% {
+      transform: translateY(-115px);
+    }
+    60% {
+      transform: translateY(-115px);
+    }
+    70% {
+      transform: translateY(-115px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes content {
+    0% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+    2% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    40% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    90% {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-170px);
+    }
+  }
 }
