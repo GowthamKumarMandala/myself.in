@@ -46,7 +46,7 @@ html {
   color: #fff;
 }
 .navbar .logo a:hover {
-  color: rgb(0, 208, 255);
+  color: black;
 }
 .navbar .logo a span:hover {
   color: #fff;
