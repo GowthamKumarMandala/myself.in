@@ -423,7 +423,7 @@ section .title::after {
 
 /* TEAM SECTION STYLING */
 .teams .title::after {
-  content: "who with me";
+  content: "what I achieved";
 }
 .teams .carousel .card {
   background: #222;
