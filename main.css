@@ -525,7 +525,7 @@ section .title::after {
   width: 340px;
   height: 240px;
   border-radius: 10px;
-  box-shadow: 0 5px 20px grey;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff !important;
   transition: 0.3s;
   background: #fff;
   cursor: pointer;
@@ -546,7 +546,7 @@ section .title::after {
 #projectimg {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 5px 20px grey;
+  box-shadow: 6px 6px 12px #343435, -6px -6px 12px #070707 !important;
   transition: 0.3s;
 }
 .content {
@@ -982,7 +982,7 @@ footer span a:hover {
     width: 300px;
     height: 200px;
     margin-right: -10px;
-    box-shadow: 0 5px 10px grey;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff !important;
   }
   .content {
     transition: 0.3s;
