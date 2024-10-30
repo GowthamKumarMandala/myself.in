@@ -570,6 +570,68 @@ section .title::after {
   transform: translateY(-100px);
 }
 
+/*TOOLS SECTION*/
+.tools{
+  background-color: black;
+
+}
+.toolscontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolscontainer2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolimagebox{
+  background-color: rgb(33, 32, 32);
+  width: 100px;
+  height: 100px;
+  border: 6px solid rgb(68, 64, 64);
+  border-radius: 50%;
+  box-shadow: #080807 2px -1px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.8s;
+}
+@keyframes toolcardanimation {
+  35% {
+      transform: translateY(0px);
+  }
+  50%{
+      transform: translateY(30px);
+  }   
+  70%{
+      transform: translateY(0px);
+  }   
+}
+@keyframes toolcardanimation1 {
+  25% {
+      transform: scale(1)
+  }
+  50%{
+      transform: scale(1.032)
+  } 
+  89%{
+      transform: scale(1)
+  }     
+}
+#toolimg{
+  width: 80px;
+  height: 80px;
+  border: 10px white;
+  border-radius: 50%;
+}
+.toolcard{
+  margin:20px;
+}
+
+
+
+
 /* CONTACT SECTION */
 .contact .title::after {
   content: "get in touch";
@@ -692,6 +754,34 @@ footer span a:hover {
 }
 
 @media (max-width: 947px) {
+
+  .toolimagebox{
+    width: 65px;
+    height: 65px;
+    border: 3px solid rgb(68, 64, 64);
+  }
+  #toolimg{
+    width: 50px;
+    height: 50px;
+    border: 6px white;
+    border-radius: 50%;
+}
+.toolcard{
+    margin:7px;
+}
+.toolscontainer2,.toolscontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 160px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+}
+.toolscontainer2{
+  margin-top: 1px;
+}
   .max-width {
     padding: 0 50px;
   }
@@ -835,6 +925,34 @@ footer span a:hover {
 }
 
 @media (max-width: 690px) {
+  .toolimagebox{
+    width: 55px;
+    height: 55px;
+    border: 3px solid rgb(68, 64, 64);
+  }
+  #toolimg{
+    width: 45px;
+    height: 45px;
+    border: 5px white;
+    border-radius: 50%;
+}
+.toolcard{
+    margin:5px;
+}
+.toolscontainer2,.toolscontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 160px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+
+}
+.toolscontainer2{
+  margin-top: 1px;
+}
+  
   .mainlogo img {
     display: flex;
   }
