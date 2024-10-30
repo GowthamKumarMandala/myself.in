@@ -486,7 +486,7 @@ section .title::after {
 
 /* PROJECTS SECTION */
 .projects .title::after {
-  content: "I Have Done";
+  content: "what I Done";
 }
 .projects .carousel .projectcard {
   background: #fff;
@@ -573,6 +573,9 @@ section .title::after {
 }
 
 /*TOOLS SECTION*/
+.tools .title::after {
+  content: "what I learnt";
+}
 .tools{
   background-color: #222;
 
