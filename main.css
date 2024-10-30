@@ -573,7 +573,7 @@ section .title::after {
 }
 
 /*TOOLS SECTION*/
-.tools .title::after {
+#tools .title::after {
   content: "what I learnt";
 }
 .tools{
