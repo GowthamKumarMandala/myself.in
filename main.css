@@ -131,7 +131,7 @@ html {
 }
 /* HOME SECTION */
 .home {
-  background: url("images/webwall1.jpeg");
+  background: url("images/bakground_my_image.png");
   background-size: cover;
   display: flex;
   height: 100vh;
